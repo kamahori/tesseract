@@ -20,7 +20,7 @@ with urllib.request.urlopen('http://x0213.org/codetable/sjis-0213-2004-std.txt')
                     chars[code] = True
 
 del_list = {}
-with open('/root/tess/langdata/jpn/forbidden_characters') as f:
+with open('/content/tess/langdata/jpn/forbidden_characters') as f:
     for line in f:
         m = re.search('0x([0-9a-f]{2,4})(-0x([0-9a-f]{2,4}))?\s*$', line, flags=re.I)
         if m:
