@@ -345,7 +345,7 @@ phase_I_generate_image() {
             cp "${f}" "${OUTPUT_DIR}"
         done
     fi
-    run_command python3 /home/ubuntu/normalize_text.py ${TRAINING_DIR}
+    run_command python3 /content/tess/tesseract/normalize_text.py ${TRAINING_DIR}
 }
 
 # Phase UP : Generate (U)nicharset and (P)roperties file.
